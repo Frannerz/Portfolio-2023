@@ -1,0 +1,933 @@
+html {
+    font-size: 16px;
+    font-family: 'Grandiflora One', serif;
+}
+
+body {
+    background-image: url('./Images/background.jpeg');
+    background-size: stretch;
+    background-position: center;
+  
+}
+
+h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 6rem;
+    text-align: center;
+    line-height: 0.5rem;
+    margin-top: 50px;
+}
+
+/*landing page*/
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 10px;
+    max-height: 1000px;
+    width: 100%;
+}
+
+
+/*intro section*/
+.welcome{
+    font-size: 2rem;
+    font-weight: 700;
+    color: blueviolet;
+    background-color:rgba(240, 199, 50, 0.5);
+}
+.intro{
+    grid-column: 3 / span 4;
+    grid-row: 3 / span 5;
+    font-size: 1.5rem;
+    font-family: 'Grandiflora One', serif;
+    z-index: 1;
+}
+
+.intro img {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+
+
+/*Links*/
+.links{
+    grid-column: 7 / span 6;
+    grid-row: 2 / span 4 ;
+    font-family: 'Rampart One', cursive;
+    line-height:6rem;
+}
+
+.links p {
+    list-style-type: none;
+    transform: rotate(355deg)
+    
+}
+
+.about {
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+}
+
+.aboutProjectsPage {
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+}
+
+.projects{
+    font-size: 8rem;
+    color: black;
+    text-decoration: none;
+   
+}
+
+.links-2{
+    display: none;
+    grid-column: 9 / span 3;
+    grid-row: 2 / span 2 ;
+    font-family: 'Rampart One', cursive;
+    line-height:4rem;
+    
+}
+
+.links-2 p {
+    list-style-type: none;
+    transform: rotate(355deg);
+    
+}
+
+.homeButton {
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+}
+
+.links-2 .projects{
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+}
+
+.links-2 .contact{
+    font-size: 5rem;
+    color: black;
+    text-decoration: none;
+   
+}
+.links-2 .homeButton{
+    font-size: 5rem;
+    color: black;
+    text-decoration: none;
+   
+}
+.contact{
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+}
+
+
+a:hover {
+    font-weight: 900;
+    color: blueviolet;
+}
+
+.gameFrame a:hover, .travelFrame a:hover {
+    font-weight: 900;
+    color: blueviolet;
+    background-color:rgba(240, 199, 50, 0.5);
+}
+
+.links-2 .projects:hover, .links-2 .contact:hover, 
+.links-2 .homeButton:hover {
+    color:rgb(132, 86, 239);
+}
+
+.links-3 {
+    grid-column: 8 / span 8 !important;
+}
+
+
+/*page decorations and animations*/
+.decoration1 {
+    /* grid-column: 1 / span 2;
+    grid-row: 1 /span 2; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: rotate(-10deg);
+    z-index: -3;
+}
+.decoration1 img {
+    width : 400px;
+}
+.decoration2 {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    z-index: -3;
+}
+.decoration2 img {
+    width : 400px;
+    transform: rotate(190deg);
+}  
+
+.decoration3 {
+    grid-column: 11/ span1;
+    grid-row: 1 / span1;
+}
+.decoration3 img {
+    width: 300px;
+    transform: rotate(20deg);
+
+}
+
+@keyframes danceAnimation {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  #flyingPig {
+    animation: danceAnimation 1s infinite;
+   
+  }
+
+
+/*about page */
+ .page-2 {
+    font-size: 1rem;
+ }
+
+
+.personalContent-1 img, .personalContent-2 img, 
+.personalContent-3 img {
+    max-width: 200px;
+    border-radius: 50%;
+    height: auto;
+}
+
+.personalContent-1, .personalContent-2, .personalContent-3 {
+    padding: 10px;
+    margin: 5px;
+    border: solid black 1px;
+    background-color: aliceblue;
+    box-shadow: -10px 10px;
+}
+
+.personalContent-1 div{
+    text-align: center;
+   
+}
+
+
+.personalContent-1 {
+    grid-column: 1/ span 4;
+    grid-row: 3/ span 5;
+    padding: 5px;
+    margin-left: 30px;
+   
+}
+
+.personalContent-2 {
+    grid-column: 5/span 4 ;
+    grid-row: 1/ span 5;
+    z-index: 1;
+}
+
+.personalContent-2 div {
+    text-align: center;
+}
+
+.personalContent-3 {
+    grid-column: 9/span 4 ;
+    grid-row: 4/ span 4;
+
+}
+
+
+/*Projects section*/
+iframe {
+    width: 450px;
+    height: 350px
+}
+
+.gameFrame {
+    border: solid black 1px;
+    background-color: aliceblue;
+    box-shadow: -10px 10px;
+    grid-column: 2/ span 5;
+    grid-row: 3/span 6;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.travelFrame {
+    border: solid black 1px;
+    background-color: aliceblue;
+    box-shadow: -10px 10px;
+    grid-column: 7/ span 5;
+    grid-row: 3/ span 6;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+/*contact page*/
+
+
+
+.github {
+    padding-top: 50px;
+    grid-column: 3/ span 1;
+    grid-row: 3/ span 1;
+}
+
+.githubText {
+    font-size: 2rem;
+    grid-column: 4/span 3;
+    grid-row: 3/ span 1;
+    padding-top: 40px;
+}
+
+.linkedIn {
+    grid-column: 3/ span 1;
+    grid-row: 4/ span 1;
+}
+
+.linkedInText {
+    font-size: 2rem;
+    grid-column: 4/ span 3;
+    grid-row: 4/ span 1;
+    padding-top: 40px;
+}
+.cv{
+    grid-column: 8/ span 1;
+    grid-row: 3/ span 1;
+}
+.cvText {
+    font-size: 2rem;
+    grid-column: 9/ span 3;
+    grid-row: 3/ span 1;
+    padding-top: 40px;
+}
+
+.codecademy{
+    grid-column: 8/ span 1;
+    grid-row: 4/ span 1;
+    padding-left: 25px;
+}
+.codecademyText {
+    font-size: 2rem;
+    grid-column: 9/ span 4;
+    grid-row: 4/ span 1;
+    padding-top: 40px;
+}
+.github img, .linkedIn img, .codecademy img{
+    width: 150px;
+}
+.cv img {
+    width:120px;
+    padding-left: 20px;
+}
+/*contact page links*/
+.githubText a, .linkedInText a, .cvText a, .codecademyText a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.githubText a:hover, .linkedInText a:hover, 
+.cvText a:hover, .codecademyText a:hover{
+    color: blueviolet;
+    background-color:rgba(240, 199, 50, 0.5);
+
+}
+
+/* Media Queries */
+
+/* iPhones */
+
+@media only screen and (max-width:600px){
+    .intro{
+        position: relative;
+        top: 100px;
+        font-size: 1.5rem;
+        font-family: 'Grandiflora One', serif;
+        z-index: 1;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+  
+    .grid-container {
+        display: block;
+    }
+    h1 {
+        font-size: 1.8rem;
+        margin-top: 100px;
+    }
+
+    .links{
+        line-height:2rem;
+        position: relative;
+        top:90px;
+        left: 20%;
+    }
+    
+    .links p {
+        transform: rotate(0deg);
+        
+    }
+
+    
+     #links-2{
+        line-height: 5rem;
+        display: none;
+        position: fixed;
+        top: 150px;
+        left:20px;
+        
+    }
+
+    .links-2 .projects{
+        font-size: 4.6rem;
+        transform: rotate(0deg);
+    }
+    
+    .links-2 .contact{
+        font-size: 5rem;
+        transform: rotate(0deg);
+       
+    }
+    .links-2 .homeButton{
+        font-size: 5rem;
+        transform: rotate(0deg);
+       
+    }
+    
+    .personalContent-1 img, .personalContent-2 img, 
+    .personalContent-3 img {
+        max-width: 180px;
+    }
+    
+    .personalContent-1, .personalContent-2, .personalContent-3 {
+        padding: 10px;
+        margin: 5px;
+        background-color: rgba(240, 248, 255,0.9);
+        margin-bottom: 50px;
+          
+    }
+
+   
+   /* decorations */
+    .decoration1 {
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: -3;
+    }
+    .decoration1 img {
+        width : 150px;
+    }
+    .decoration2 {
+        position: fixed;
+        bottom:0px;
+        left: 150px;
+        z-index: -2;
+    }
+    .decoration2 img {
+        width : 150px;
+        transform: rotate(190deg);
+    } 
+    
+    .decoration3 {
+        position: fixed;
+        top: 0;
+        right:0px ;
+        z-index: -1;
+    }
+    .decoration3 img {
+        width: 150px;
+    }
+
+    /* projects page */
+    iframe {
+        width: 330px;
+        height: 350px
+    }
+    .gameFrame, .travelFrame {
+        width: 330px;
+        margin: 30px auto;
+    }
+    .aboutProjectsPage, .homeButton, .contact{
+        font-size: 3rem;
+    }
+/*contact page*/
+
+.github,  .linkedIn,
+.cv, .codecademy {
+    text-align: center;
+    border-top: 1px solid black ;
+    
+}
+
+.githubText, .linkedInText, .cvText, 
+.codecademyText{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.cv img, .github img, .linkedIn img, .codecademy img{
+    width: 150px;
+    margin-top: 20px;
+}
+
+
+}
+
+/* iphone SE portrait*/
+
+@media only screen and (max-width:320px){
+    .links {
+        position: relative;
+        top: 50px;
+        left: 0;
+        text-align: center;
+        line-height: 1rem;
+    }
+    
+    .intro {
+        background-color: rgba(240, 248, 255,0.8);
+        position: relative;
+        top: 50px;
+    }
+
+    .links-2 .projects{
+        font-size: 3.5rem;
+        transform: rotate(0deg);
+    }
+
+    
+       /* decorations */
+       .decoration1 {
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: -3;
+    }
+    .decoration1 img {
+        width : 120px;
+    }
+    .decoration2 {
+        position: fixed;
+        top: 400px;
+        left: 75px;
+        z-index: -2;
+    }
+    .decoration2 img {
+        width : 150px;
+        transform: rotate(190deg);
+    }  
+    
+    .decoration3 {
+        position: fixed;
+        top: 0;
+        left:180px ;
+        z-index: -1;
+    }
+    .decoration3 img {
+        width: 150px;
+    }
+ /* projects page */
+        h1{
+           font-size: 1.5rem;
+        }
+        iframe {
+            width: 95%;
+            height: 350px
+        }
+        .gameFrame, .travelFrame {
+            width: 90%;
+            margin: 30px auto;
+        }
+        #landingPage, #aboutLink, 
+        #contactLink{
+            font-size:3rem ;
+        }
+      
+    
+}
+
+/* 800x600 screens + up to next bracket */
+
+@media only screen and (min-width:600px) 
+and (max-width:899px) {
+    .intro {
+        grid-column: 2 / span 5;
+        grid-row: 2 / span 5;
+        font-size: 1.3rem;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .intro img{
+        width:170px;
+    }
+    .about{
+        font-size: 4rem;
+    }
+    
+    .projects {
+        font-size: 5rem;
+    }
+    
+    .contact{
+        font-size: 4rem;
+    }
+    .links{
+        margin-top: 10px;
+        line-height: 4rem;
+    }
+    /* decorations */
+    
+    .decoration1 img {
+        width : 300px;
+    }
+    .decoration2 .page-2 {
+      position: fixed;
+      bottom: 0px;
+      right: 20px;
+    } 
+    .decoration2 img {
+        width : 250px;
+    }   
+    
+    .decoration3 {
+        grid-column: 10/ span1;
+        grid-row: 1 / span1;
+    }
+    .decoration3 img {
+        width: 200px;
+    }
+
+    /* about page */
+    h1{
+        font-size: 3rem
+    }
+    .links-2 .projects{
+        font-size: 3.2rem;
+    }
+    
+    .links-2 .contact{
+        font-size: 3rem;
+        
+    }
+    .links-2 .homeButton{
+        font-size: 3rem;
+    }
+    .personalContent-1, .personalContent-2, 
+    .personalContent-3{
+        font-size:1rem;
+    }
+
+    .personalContent-1 {
+        grid-row: 2/ span 6;
+    }
+    .personalContent-2 {
+        grid-row: 1/ span 6;
+        
+    }
+    
+    .personalContent-3 {
+        grid-row: 2/ span 5;
+    }
+    
+    .personalContent-1 img, .personalContent-2 img {
+        max-width: 150px;
+    }
+    /* projects page */
+    h1{
+        font-size: 3remrem;
+     }
+     iframe {
+         width: 300px;
+         height: 250px
+     }
+     .gameFrame {
+        grid-column: 2/ span 5;
+        grid-row: 2/span 5;
+        width: 320px;
+        background-color: rgba(240, 248, 255,0.75);
+     }
+     .travelFrame {
+         width: 320px;
+         grid-column: 7/ span 5;
+         grid-row: 2/span 5;
+         background-color: rgba(240, 248, 255,0.75);
+     }
+     #landingPage, #aboutLink, 
+     #contactLink{
+         font-size:3rem ;
+     }
+   
+/*contact page*/
+
+.github {
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.githubText {
+    font-size: 1.2rem;
+    grid-column: 4/span 3;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.linkedIn {
+    grid-column: 3/ span 1;
+    grid-row: 3/ span 1;
+}
+
+.linkedInText {
+    font-size: 1.2rem;
+    grid-column: 4/ span 3;
+    grid-row: 3/ span 1;
+    padding-top: 10px;
+}
+.cv{
+    grid-column: 8/ span 1;
+    grid-row: 2/ span 1;
+   
+}
+.cvText {
+    font-size: 1.2rem;
+    grid-column: 9/ span 3;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.codecademy{
+    grid-column: 8/ span 1;
+    grid-row: 3/ span 1;
+}
+.codecademyText {
+    font-size: 1.2rem;
+    grid-column: 9/ span 4;
+    grid-row: 3/ span 1;
+    padding-top: 10px;
+}
+.github img, .linkedIn img, .cv img {
+    width: 90px;
+}
+.codecademy img {
+    width: 100px;
+}
+
+}
+
+/* iPads */
+
+@media only screen and (min-width:900px) 
+and (max-width:1440px) {
+    h1{
+        font-size: 5rem;
+    }
+    .about{
+        font-size: 5rem;
+    }
+    
+    .projects {
+        font-size: 7rem;
+    }
+    
+    .contact{
+        font-size: 6rem;
+    }
+    /* .decoration2 {
+        width: 150px;
+        right: 40px;
+    }   */
+
+    /* about page */
+    .personalContent-3{
+        grid-column: 9/span 4 ;
+        grid-row: 3/ span 4;
+    }
+    .personalContent-1 {
+        grid-row: 3/ span 5;
+    }
+    
+    .decoration3 {
+        grid-column: 10/ span2;
+        grid-row: 1 / span1;
+    }
+
+    .decoration3 img {
+        width: 250px;
+    }
+
+    .links-2{
+        margin-top: 40px;
+        line-height:4rem;
+    }
+
+    /* projects page */
+    iframe {
+        width: 400px;
+        height: 350px
+    }
+    .gameFrame {
+        grid-column: 1/ span 6;
+        grid-row: 3/span 6;
+        padding: 10px;
+        margin: 10px;
+    }
+    .travelFrame {
+        grid-column: 7/ span 6;
+        grid-row: 3/ span 6;
+        padding: 10px;
+        margin: 10px;
+    } 
+
+} 
+
+/* wide, short screen */
+@media only screen and (min-width: 1350px)
+and (max-height: 800px) {
+    /*contact page*/
+
+.github {
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.githubText {
+    font-size: 1.2rem;
+    grid-column: 4/span 3;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.linkedIn {
+    grid-column: 3/ span 1;
+    grid-row: 3/ span 1;
+}
+
+.linkedInText {
+    font-size: 1.2rem;
+    grid-column: 4/ span 3;
+    grid-row: 3/ span 1;
+    padding-top: 10px;
+}
+.cv{
+    grid-column: 8/ span 1;
+    grid-row: 2/ span 1;
+   
+}
+.cvText {
+    font-size: 1.2rem;
+    grid-column: 9/ span 3;
+    grid-row: 2/ span 1;
+    padding-top: 20px;
+}
+
+.codecademy{
+    grid-column: 8/ span 1;
+    grid-row: 3/ span 1;
+}
+.codecademyText {
+    font-size: 1.2rem;
+    grid-column: 9/ span 4;
+    grid-row: 3/ span 1;
+    padding-top: 10px;
+}
+.github img, .linkedIn img, .cv img {
+    width: 90px;
+}
+.codecademy img {
+    width: 100px;
+}
+
+
+} 
+
+/* large screens */
+
+@media only screen and (min-width: 1441px){
+    /* decorations */
+    p {
+        font-size: 1.4rem; 
+    } 
+    .intro p{
+        font-size: 2rem;
+    }
+    .intro {
+        grid-column: 2/ span 4;
+        grid-row: 3/ span 5;
+        text-align: center;
+    }
+    .decoration1 img {
+        width : 400px;
+    }
+
+    
+    .decoration3 {
+        grid-column: 10/ span2;
+        grid-row: 1 / span1;
+    }
+    .decoration3 img {
+        width: 400px;
+    }
+
+    /* links */
+    .links{
+        grid-column: 7 / span 6;
+        grid-row: 3 / span 5 ;
+    }
+    .links-2{
+        grid-column: 9 / span 3;
+        grid-row: 2 / span 2 ;
+        line-height:4rem;
+    }
+    .links-2 .projects{
+        font-size: 7rem;
+    }
+    
+    .links-2 .contact{
+        font-size: 6rem;
+    }
+    .links-2 .homeButton{
+        font-size: 6rem;
+    }
+
+    /* sections */
+    .personalContent-1 {
+        grid-column: 1/ span 4;
+        grid-row: 2/ span 6;
+        padding: 5px;
+        margin-left: 30px;
+    }
+    
+    .personalContent-2 {
+        grid-column: 5/span 4 ;
+        grid-row: 1/ span 6;
+        z-index: 1;
+    }
+
+    
+    .personalContent-3 {
+        grid-column: 9/span 4 ;
+        grid-row: 3/ span 5;
+    }
+} 
