@@ -27,14 +27,14 @@ piggy.addEventListener('mouseout', function() {
     timeoutId = setTimeout(function() {
       links.style.display = 'none';
       paragraph3.style.display = 'block';
-    }, 2500);
+    }, 3000);
   } else {
     timeoutId = setTimeout(function() {
       links.style.display = 'none';
       paragraph1.style.display = 'block';
       paragraph2.style.display = 'block';
       paragraph3.style.display = 'block';
-    }, 2500);
+    }, 3000);
   }
 });
 
@@ -52,7 +52,7 @@ piggy.addEventListener('mouseout', function() {
     timeoutId = setTimeout(function() {
         projects.style.display = 'block';
         projects2.style.display = 'block';
-      }, 2500);
+      }, 3000);
     });
 
 //contact section
@@ -69,7 +69,7 @@ piggy.addEventListener('mouseout', function() {
     for (let i = 0; i < contactSections.length; i++) {
       contactSections[i].style.display = 'block';
     }
-  }, 2500);
+  }, 3000);
 });
 
 
