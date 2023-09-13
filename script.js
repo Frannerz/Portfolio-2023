@@ -8,6 +8,25 @@ let paragraph2 = document.getElementById('paragraph-2');
 
 
 const mediaQuery = window.matchMedia('(min-width: 450px)');
+// Archive message
+document.addEventListener("DOMContentLoaded", function () {
+  const popup = document.getElementById("popup");
+  const closeButton = document.getElementById("closeButton");
+  const linkButton = document.getElementById("linkButton");
+
+  // Show the pop-up when the page loads
+  popup.style.display = "block";
+
+  // Close the pop-up when the "Close" button is clicked
+  closeButton.addEventListener("click", function () {
+      popup.style.display = "none";
+  });
+
+  // Redirect to a different site when the "Go to Different Site" link is clicked
+  linkButton.addEventListener("click", function () {
+      window.location.href = "https://example.com";
+  });
+});
 
 // about page
 piggy.addEventListener('mouseover', function() {
